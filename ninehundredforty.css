@@ -1,0 +1,163 @@
+html, body, div#container {
+	width: 100%;
+	height: 100%;
+	margin-left: 0;
+}
+#header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.8);
+	z-index: 1;
+}
+#upload {
+	width: 50%;
+	height: 0px;
+	margin: 0 25%;
+	overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+#upload.visible {
+	height: 50%;
+	-webkit-transition: height .25s ease;
+	-moz-transition: height .25s ease;
+	transition: height .25s ease;
+}
+#upload .dot {
+	background-color: white;
+	border: 5px solid #cccccc;
+	text-align: center;
+}
+#upload .dot .instructions {
+	position: absolute;
+	left: 0;
+	bottom: 50%;
+	color: #999;
+	width: 100%;
+}
+#container {
+	margin-top: 45px;
+}
+h1 {
+	text-align: center;
+	font-size: 26px;
+	width: 100%;
+	margin: 0;
+}
+h1 span.small {
+	font-size: 0.5em;
+}
+h1 a.small {
+	vertical-align: top;
+	padding: 10px 12px;
+}
+#description {
+	text-align: center;
+	margin: 0 10px 20px 10px;
+	display: none;
+}
+.dot-container {
+    display: inline-block;
+    position: relative;
+    width: 10%;
+    float: left;
+	-webkit-transition: width .25s ease;
+	-moz-transition: width .25s ease;
+	transition: width .25s ease;
+}
+.date {
+	display: block;
+	visibility: hidden;
+	text-align: center;
+	position: absolute;
+	bottom: 50%;
+	width: 100%;
+	color: white;
+/*	text-shadow: 0px 0px 5px #333333; */
+	text-shadow: -1px -1px 0 #333333,
+				  1px -1px 0 #333333,
+				 -1px  1px 0 #333333,
+				  1px  1px 0 #333333; /* simulate stroke */
+	font-size: 1px;
+}
+.dummy {
+    margin-top: 100%;
+}
+.report {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: none;
+}
+.bigger .report {
+    display: block;
+}
+.dot {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	margin: 5%;
+	border: 1px solid #cccccc;
+	background-size: 100%;
+}
+.class-4 .dot {
+	background-color: #ffcccc;
+}
+.class-1 .dot {
+	background-color: #ccffcc;
+}
+.class-2 .dot {
+	background-color: #ccccff;
+}
+.class-3 .dot {
+	background-color: #ffffcc;
+}
+.ordinal {
+	width: 100%;
+	display: block;
+	text-align: center;
+	position: absolute;
+	bottom: 50%;
+	color: #999;
+	line-height: 0;
+}
+.bigger {
+	width: 100%;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.bigger .dot {
+	border-width: 5px;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.bigger .date {
+	visibility: visible;
+	font-size: 2em;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.bigger .ordinal {
+	display: none;
+}
+@media screen and (orientation: landscape) {
+	.bigger {
+		width: 50%;
+		margin: 0 25%;
+	}
+	.bigger .dot {
+	}
+	.bigger .date {
+/*		font-size: 1em; */
+	}
+	visibility: visible;
