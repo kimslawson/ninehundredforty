@@ -4,7 +4,7 @@ There are only 940 Saturdays between your child's birth and them leaving for col
 
 ##Background
 
-The inspiration for the site came from Dr. Harley Rotbart's http://www.noregretsparenting.com/
+The inspiration for the site came from Dr. Harley Rotbart's [No Regrets Parenting](http://www.noregretsparenting.com/).
 
 ##Implementation
 
@@ -17,3 +17,7 @@ To report questionable or inappropriate content, please use the link provided ne
 ##Shout-outs
 
 Nine Hundred Forty relies extensively on Hoodie to do such essential but mundane tasks as user authentication and data storage.
+
+##Preview
+
+You can check out [Nine Hundred Forty in its pre-alpha state here](http://rawgithub.com/kimslawson/ninehundredforty/master/index.html) (thanks to rawgithub.com).
