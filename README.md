@@ -16,7 +16,7 @@ To report questionable or inappropriate content, please use the link provided ne
 
 ##Shout-outs
 
-Nine Hundred Forty relies extensively on Hoodie to do such essential but mundane tasks as user authentication and data storage.
+Nine Hundred Forty relies extensively on [Hoodie](http://hood.ie) to do such essential but mundane tasks as user authentication and data storage.
 
 ##Preview
 
