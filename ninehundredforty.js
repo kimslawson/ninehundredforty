@@ -6,7 +6,7 @@ $('.dot').click(function(e) {
 	if($(this).css('background-image') == 'none') {
 	//	var bkg = 'http://flickholdr.com/1000/1000/kids,family/' + $(this).parent().attr('id').replace('ordinal-','');
 	//	var bkg = 'http://pixelholdr.com/kids,vacation/1000x1000/seed:' + $(this).parent().attr('id').replace('ordinal-','') + ',dimensions:hide';
-		var bkg = 'http://lorempixel.com/1000/1000/people/' + $(this).parent().attr('id').replace('ordinal-',''); // other placeholder services are dead as of 4/2014
+		var bkg = 'http://lorempixel.com/1000/1000/people/' + $(this).parent().attr('id').replace('ordinal-','') % 10; // other placeholder services are dead as of 4/2014
 	//	alert(bkg);
 		$(this).css('background-image', 'url(' + bkg + ')');
 	}
