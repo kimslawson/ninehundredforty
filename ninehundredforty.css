@@ -16,7 +16,7 @@ html, body, div#container {
 	height: 0px;
 	margin: 0 25%;
 	overflow: hidden;
-    display: inline-block;
+    display: none;
     position: relative;
 }
 #upload.visible {
@@ -24,6 +24,7 @@ html, body, div#container {
 	-webkit-transition: height .25s ease;
 	-moz-transition: height .25s ease;
 	transition: height .25s ease;
+    display: inline-block;
 }
 #upload .dot {
 	background-color: white;
@@ -172,7 +173,6 @@ h1 a.small {
     .bigger {
         width: 100% !important;
     }
-
     .report {
         top: 10%;
         left: 10%;
@@ -192,5 +192,9 @@ h1 a.small {
     }
     .bigger .date {
 /*        font-size: 1em; */
+    }
+    .report {
+        top: 5% !important;
+        left: 5% !important;
     }
 }
