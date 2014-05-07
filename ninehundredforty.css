@@ -33,9 +33,10 @@ html, body, div#container {
 #upload .dot .instructions {
 	position: absolute;
 	left: 0;
-	bottom: 50%;
+	bottom: 47%;
 	color: #999;
-	width: 100%;
+	width: 80%;
+        padding: 0 10%;
 }
 #container {
 	margin-top: 45px;
@@ -159,19 +160,37 @@ h1 a.small {
 .bigger:hover .date{
     display: none;
 }
-@media screen and (orientation: landscape) {
-	.bigger {
-		width: 50%;
-		margin: 0 25%;
-	}
-	.bigger .dot {
-	}
-	.bigger .date {
-/*		font-size: 1em; */
-	}
+@media only screen and (max-width: 320px) {
+    #upload .dot .instructions {
+	bottom: 37%;
+    }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 568px) { /* iphone 5 landscape orientation */
     .dot-container {
-        width: 5%;
+        width: 7.6923%;
+    }
+    .bigger {
+        width: 100% !important;
+    }
+
+    .report {
+        top: 10%;
+        left: 10%;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .dot-container {
+        width: 3.846%;
+    }
+}
+@media screen and (orientation: landscape) {
+    .bigger {
+        width: 50% !important;
+        margin: 0 25% !important;
+    }
+    .bigger .dot {
+    }
+    .bigger .date {
+/*        font-size: 1em; */
     }
 }
