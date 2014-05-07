@@ -170,3 +170,8 @@ h1 a.small {
 /*		font-size: 1em; */
 	}
 }
+@media only screen and (min-width: 768px) {
+    .dot {
+        width: 5%;
+    }
+}
