@@ -155,12 +155,6 @@ h1 a.small {
 .bigger .ordinal {
 	display: none;
 }
-.dot:hover .ordinal{
-    display: none;
-}
-.bigger:hover .date{
-    display: none;
-}
 @media only screen and (max-width: 320px) {
     #upload .dot .instructions {
 	bottom: 37%;
@@ -196,5 +190,15 @@ h1 a.small {
     .report {
         top: 5% !important;
         left: 5% !important;
+    }
+}
+@media only screen and (min-width: 1025px) and (max-resolution: 299dpi) {
+    /* only want hover effects on non-mobile devices */
+    /* assume that desktop machines that support hover have <300dpi screens >1024px wide */
+    .dot:hover .ordinal{
+        display: none;
+    }
+    .bigger:hover .date{
+        display: none;
     }
 }
