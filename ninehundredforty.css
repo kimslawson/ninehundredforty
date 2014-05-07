@@ -153,6 +153,12 @@ h1 a.small {
 .bigger .ordinal {
 	display: none;
 }
+.dot:hover .ordinal{
+    display: none;
+}
+.bigger:hover .date{
+    display: none;
+}
 @media screen and (orientation: landscape) {
 	.bigger {
 		width: 50%;
@@ -163,4 +169,4 @@ h1 a.small {
 	.bigger .date {
 /*		font-size: 1em; */
 	}
-	visibility: visible;
+}
